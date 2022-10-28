@@ -28,7 +28,7 @@ npm start to open app in browser
 
 #### Features / Routes
 
-- Feature Phase 1: 
+- Feature Phase 1:
   - Display URL and POST Method requested
   - Enter URL into url text entry input
   - Select method of request by clicking the input
