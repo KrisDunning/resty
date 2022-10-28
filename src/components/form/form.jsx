@@ -13,7 +13,7 @@ const [formJSON,setFormJSON] = useState({});
     const formData = {
       method:method,
       url: theUrl,
-      textarea:formJSON,
+      data:formJSON,
     };
     props.handleApiCall(formData);
   }
@@ -34,7 +34,7 @@ const [formJSON,setFormJSON] = useState({});
             <span id="delete" onClick={()=>setMethod('DELETE')}>DELETE</span>
           </label>
         <label id='JSON_Text_Area'>
-          <textarea rows={6} defaultValue={'{\nPlease enter POST and PUT JSON request data here.\n}'} onChange={setFormJSON}/>
+          <textarea rows={6} defaultValue={'{\nPlease enter POST and PUT JSON request data here.\n}'} onChange={(e)=>setFormJSON(e.target.value)}/>
         </label>
         </form>
       </>
